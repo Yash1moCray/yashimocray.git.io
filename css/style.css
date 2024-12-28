@@ -3,12 +3,21 @@
     padding: 0;
 }
 
+body {
+    background-color: rgb(248, 254, 255);
+    margin: 0 auto;
+    width: 50%;
+}
+
 .border {
     border-bottom: solid rgb(61, 61, 61) 1px;
 }
 
 .header-field {
-    width: 50%;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
     padding: 15px 0;
     margin: 0 auto;
     display: table;
@@ -31,24 +40,95 @@
     display: inline-block;
 }
 
-header .icon-link {
+header .icon-link{
+    color: rgb(122, 122, 122);
     text-align: center;
     font-size: 32px;
 }
 
-.header-links-field {
-    display: flex;
-    justify-content: end;
+header .icon-link a {
+    transition: all 300ms ease;
+}
+
+header .icon-link a:hover {
+    color: rgb(231, 203, 174);
 }
 
 .header-cell.header-cell-onanimation ul li a {
     transition: all 300ms 0s ease;
+    text-decoration: none;
+    color: rgb(122, 122, 122);
 }
 
-.header-cell li:hover {
+.header-cell ul li a:hover {
     letter-spacing: 0.15em;
     font-size: 18px;
     color: rgb(255, 153, 85);
+}
+
+.main-field {
+    width: 90%;
+    padding-top: 40px;
+    margin: 0 auto;
+}
+
+.main-field h2 {
+    color: rgb(90, 90, 90);
+}
+
+/* お知らせの枠 */
+.main-notice-colmun {
+    width: 80%;
+    height: 200px;
+    border: solid rgb(172, 221, 236) 2px;
+    border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#notice li {
+    list-style: none;
+    padding-left: 10px;
+}
+
+#notice li a {
+    transition: all 300ms 0s ease;
+}
+
+#notice li a:hover {
+    color: rgb(87, 132, 255);
+}
+
+.main-game-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.maingame-game {
+    padding-top: 25px;
+    text-align: center;
+    width: 33%;
+}
+
+.maingame-game .Title {
+    color: rgb(63, 63, 63);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.maingame-game .release {
+    font-size: 12px;
+}
+
+.maingame-game img {
+    margin: 0 auto;
+    transition: all 300ms ease;
+}
+
+.maingame-game img:hover {
+    width: 150px;
+    height: 150px;
 }
 
 
